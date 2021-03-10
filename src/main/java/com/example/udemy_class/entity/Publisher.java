@@ -45,7 +45,6 @@ public class Publisher extends BaseEntity{
                 ", city='" + city + '\'' +
                 ", state='" + state + '\'' +
                 ", zip='" + zip + '\'' +
-                ", books=" + books +
                 '}';
     }
 }

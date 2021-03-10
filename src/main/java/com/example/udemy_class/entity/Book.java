@@ -22,6 +22,7 @@ public class Book extends BaseEntity{
     @ManyToOne
     private Publisher publisher;
 
+
     @ManyToMany
     @JoinTable(name="author_book", joinColumns = @JoinColumn(name="book_id"),
             inverseJoinColumns = @JoinColumn(name = "author_id"))
@@ -30,6 +31,7 @@ public class Book extends BaseEntity{
     public Book(String title, String isbn) {
         this.title = title;
         this.isbn = isbn;
+
     }
 
     @Override
@@ -37,7 +39,6 @@ public class Book extends BaseEntity{
         return "Book{" +
                 "title='" + title + '\'' +
                 ", isbn='" + isbn + '\'' +
-                ", authors=" + authors +
                 '}';
     }
 }

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="eng" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+
+  <meta charset="UTF-8"/>
+  <title>Spring Framework Simple Sample</title>
+
+</head>
+<body>
+<h1>Book List</h1>
+
+<table>
+
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Publisher</th>
+  </tr>
+  <tr th:each="book : ${book}">
+    <td th:text="${book.baseentity.id}">123</td>
+    <td th:text="${book.title}">Spring in Action</td>
+    <td th:text="${book.publisher.name}">World</td>
+  </tr>
+</table>
+
+</body>
+</html>
