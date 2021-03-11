@@ -1,7 +1,6 @@
-package com.example.udemy_class.controller;
+package com.example.udemyClass.controllers;
 
-import com.example.udemy_class.repository.BookRepository;
-import lombok.AllArgsConstructor;
+import com.example.udemyClass.repository.BookRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,9 +14,11 @@ public class BookController {
         this.bookRepository = bookRepository;
     }
 
-    @RequestMapping("/books")
+    @RequestMapping( "/books")
     public String getBooks(Model model){
+
         model.addAttribute("books", bookRepository.findAll());
+
         return "books/list";
     }
 }

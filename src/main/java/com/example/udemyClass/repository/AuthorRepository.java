@@ -1,6 +1,6 @@
-package com.example.udemy_class.repository;
+package com.example.udemyClass.repository;
 
-import com.example.udemy_class.entity.Author;
+import com.example.udemyClass.entity.Author;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

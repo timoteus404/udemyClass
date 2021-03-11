@@ -1,11 +1,11 @@
-package com.example.udemy_class.bootstrap;
+package com.example.udemyClass.bootstrap;
 
-import com.example.udemy_class.entity.Author;
-import com.example.udemy_class.entity.Book;
-import com.example.udemy_class.entity.Publisher;
-import com.example.udemy_class.repository.AuthorRepository;
-import com.example.udemy_class.repository.BookRepository;
-import com.example.udemy_class.repository.PublisherRepository;
+import com.example.udemyClass.entity.Author;
+import com.example.udemyClass.entity.Book;
+import com.example.udemyClass.entity.Publisher;
+import com.example.udemyClass.repository.AuthorRepository;
+import com.example.udemyClass.repository.BookRepository;
+import com.example.udemyClass.repository.PublisherRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

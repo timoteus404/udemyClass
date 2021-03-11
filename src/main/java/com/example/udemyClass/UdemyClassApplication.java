@@ -1,4 +1,4 @@
-package com.example.udemy_class;
+package com.example.udemyClass;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
