@@ -21,6 +21,8 @@ public class Publisher {
     @JoinColumn(name = "publisher_id")
     private Set<Book> books = new HashSet<>();
 
+    private String photos;
+
     public Publisher() {
     }
 
@@ -41,6 +43,8 @@ public class Publisher {
                 ", city='" + city + '\'' +
                 ", state='" + state + '\'' +
                 ", zip='" + zip + '\'' +
+                ", books=" + books +
+                ", photos='" + photos + '\'' +
                 '}';
     }
 
@@ -105,5 +109,13 @@ public class Publisher {
 
     public void setZip(String zip) {
         this.zip = zip;
+    }
+
+    public String getPhotos() {
+        return photos;
+    }
+
+    public void setPhotos(String photos) {
+        this.photos = photos;
     }
 }

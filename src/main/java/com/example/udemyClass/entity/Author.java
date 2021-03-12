@@ -14,6 +14,10 @@ public class Author {
     private String firstName;
     private String lastName;
 
+    @Lob
+    @Column(name="logo")
+    private byte[] logo;
+
     @ManyToMany(mappedBy = "authors")
     private Set<Book> books = new HashSet<>();
 

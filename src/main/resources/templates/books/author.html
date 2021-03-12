@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Authors' List</title>
@@ -19,8 +19,13 @@
         <td th:text="${author.lastName}">Wrox</td>
     </tr>
 </table>
+<br>
 
-<img src="/home/panda/IdeaProjects/udemyClass/src/main/resources/imgs">
+<td>
+    <img th:src="${tempDepartment.logo}" >
+</td>
+
+
 
 
 </body>

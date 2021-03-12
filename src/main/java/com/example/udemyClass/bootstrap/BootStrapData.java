@@ -25,6 +25,7 @@ public class BootStrapData implements CommandLineRunner {
         publisher.setName("SFG Publishing");
         publisher.setCity("St. Petersburg");
         publisher.setState("FL");
+        publisher.setPhotos("/home/panda/IdeaProjects/udemyClass/src/main/resources/books.jpg");
 
         publisherRepository.save(publisher);
 
